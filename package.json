@@ -13,9 +13,11 @@
   "license": "ISC",
   "author": "Takeda Ku",
   "type": "commonjs",
-  "sourse": "index.html",
+  "source": "index.html",
   "scripts": {
-    "sass:watch": "sass --style=expanded --watch styles:dist"
+    "sass:watch": "sass --style=expanded --watch styles:dist",
+    "parcel:watch": "parcel serve --dist-dir public",
+    "parcel:build": "parcel build --dist-dir build --public-url ./"
   },
   "devDependencies": {
     "parcel": "^2.16.4",
